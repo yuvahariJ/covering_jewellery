@@ -1,0 +1,62 @@
+/* Default: desktop */
+.is-mobile-small,
+.is-mobile-medium,
+.is-tablet-medium {
+  display: none !important;
+}
+
+.is-desktop {
+  display: grid !important;
+}
+
+/* Small Mobile: <= 450px */
+@media screen and (max-width: 450px) {
+  .is-mobile-small {
+    display: grid !important;
+  }
+
+  .is-mobile-medium,
+  .is-tablet-medium,
+  .is-desktop {
+    display: none !important;
+  }
+}
+
+/* Medium Mobile: 451px–650px */
+@media screen and (min-width: 451px) and (max-width: 650px) {
+  .is-mobile-medium {
+    display: grid !important;
+  }
+
+  .is-mobile-small,
+  .is-tablet-medium,
+  .is-desktop {
+    display: none !important;
+  }
+}
+
+/* Tablet: 651px–1100px */
+@media screen and (min-width: 651px) and (max-width: 1100px) {
+  .is-tablet-medium {
+    display: grid !important;
+  }
+
+  .is-mobile-small,
+  .is-mobile-medium,
+  .is-desktop {
+    display: none !important;
+  }
+}
+
+/* Desktop: 1101px+ */
+@media screen and (min-width: 1101px) {
+  .is-desktop {
+    display: grid !important;
+  }
+
+  .is-mobile-small,
+  .is-mobile-medium,
+  .is-tablet-medium {
+    display: none !important;
+  }
+}
