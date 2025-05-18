@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
   },
   output: 'export',
   basePath: '/covering_jewellery',  // repo name
-  assetPrefix: '/covering_jewellery/',
+  assetPrefix: '/covering_jewellery',
 };
 
 export default nextConfig;
