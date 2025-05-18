@@ -20,7 +20,7 @@ const SliderWithOneCard = (props: SliderWithOneCardPorps) => {
   const theme = useTheme();
   const isMeduiumScreen = useMediaQuery(theme.breakpoints.up("sm"));
   const { sliderBanner, imageBanner, heading, productUid } = props;
-  const [productData, setProductData] = useState([]);
+  const [productData, setProductData] = useState<{bannerImage:string,price:string}[]>([]);
   useEffect(() => {
     if (productUid) {
       fetch("/api/bannerItem")
