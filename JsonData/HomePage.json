@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "MiniFullLengthBanner": {
+        "banner":[
+        {
+          "bannerImage": "https://rukminim2.flixcart.com/fk-p-flap/96/96/image/75ac28a1e9192898.png",
+          "title": "Top Offers 1"
+        },
+        {
+          "bannerImage": "https://rukminim2.flixcart.com/fk-p-flap/96/96/image/cd6aca4f61e8ea95.png",
+          "title": "Mobiles & Tablets 1"
+        },
+        {
+          "bannerImage": "https://rukminim2.flixcart.com/fk-p-flap/96/96/image/9c64dfa667885ca9.png",
+          "title": "TV & Washing 1"
+        },
+        {
+          "bannerImage": "https://rukminim2.flixcart.com/fk-p-flap/96/96/image/75ac28a1e9192898.png",
+          "title": "Top Offers"
+        },
+        {
+          "bannerImage": "https://rukminim2.flixcart.com/fk-p-flap/96/96/image/cd6aca4f61e8ea95.png",
+          "title": "Mobiles & Tablets"
+        },
+        {
+          "bannerImage": "https://rukminim2.flixcart.com/fk-p-flap/96/96/image/9c64dfa667885ca9.png",
+          "title": "TV & Washing"
+        },
+        {
+          "bannerImage": "https://rukminim2.flixcart.com/fk-p-flap/96/96/image/75ac28a1e9192898.png",
+          "title": "Top Offers"
+        },
+        {
+          "bannerImage": "https://rukminim2.flixcart.com/fk-p-flap/96/96/image/cd6aca4f61e8ea95.png",
+          "title": "Mobiles & Tablets"
+        },
+        {
+          "bannerImage": "https://rukminim2.flixcart.com/fk-p-flap/96/96/image/9c64dfa667885ca9.png",
+          "title": "TV & Washing"
+        },
+        {
+          "bannerImage": "https://rukminim2.flixcart.com/fk-p-flap/96/96/image/75ac28a1e9192898.png",
+          "title": "Top Offers"
+        },
+        {
+          "bannerImage": "https://rukminim2.flixcart.com/fk-p-flap/96/96/image/cd6aca4f61e8ea95.png",
+          "title": "Mobiles & Tablets"
+        },
+        {
+          "bannerImage": "https://rukminim2.flixcart.com/fk-p-flap/96/96/image/9c64dfa667885ca9.png",
+          "title": "TV & Washing"
+        }
+      ]
+    }
+    },
+    {
+      "SliderBanner": {
+        "height": 200,
+        "bannerImages": [
+          {
+            "image": "https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/37a5d9652167e101.jpg"
+          },
+          {
+            "image": "https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/8b6d6e715732a857.jpeg"
+          },
+          {
+            "image": "https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/7850424b771b8f98.jpg"
+          }
+        ],
+        "autoPlay": true
+      }
+    },
+    {
+      "SliderBanner": {
+        "height": 200,
+        "bannerImages": [
+          {
+            "image": "https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/37a5d9652167e101.jpg"
+          },
+          {
+            "image": "https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/8b6d6e715732a857.jpeg"
+          },
+          {
+            "image": "https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/7850424b771b8f98.jpg"
+          }
+        ],
+        "autoPlay": false
+      }
+    },
+    {
+      "SliderWithOneCard":{
+        "sliderBanner":{
+          "height": 200,
+          "bannerImages": [
+            {
+              "image": "https://rukminim2.flixcart.com/flap/96/96/image/69c6589653afdb9a.png?q=100"
+            },
+            {
+              "image": "https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/8b6d6e715732a857.jpeg"
+            },
+            {
+              "image": "https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/7850424b771b8f98.jpg"
+            }
+          ],
+          "autoPlay": false
+          
+        },
+        "imageBanner":{
+            "image": "https://rukminim2.flixcart.com/fk-p-flap/530/810/image/44731cc81771bce5.jpeg"
+        },
+        "heading":"Best of Electronics"
+      }
+    },
+    {
+      "SliderBanner": {
+        "height": 200,
+        "bannerImages": [
+          {
+            "image": "https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/37a5d9652167e101.jpg"
+          },
+          {
+            "image": "https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/8b6d6e715732a857.jpeg"
+          },
+          {
+            "image": "https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/7850424b771b8f98.jpg"
+          }
+        ],
+        "autoPlay": false,
+        "heading":"Best of Phone"
+      }
+    },
+    {
+      "SliderWithOneCard":{
+        "sliderBanner":{
+          "height": 300,
+          
+          "autoPlay": false
+        },
+        "imageBanner":{
+            "image": "https://rukminim2.flixcart.com/fk-p-flap/530/810/image/44731cc81771bce5.jpeg"
+        },
+        "productUid":"test",
+        "heading":"Best of phones"
+      }
+    }
+    
+  ]
+}
