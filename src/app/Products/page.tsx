@@ -62,13 +62,13 @@ const ProductList = () => {
     >
       {earingProductData?.map((earing,index) => {
         return (
-          <><PRoductInfo
+          <PRoductInfo
             imageSrc={earing?.bannerImage?.src}
             key={index}
             price={earing?.price}
             actualPrice={earing?.originalPrice}
             instock={earing?.instock}
-          /></>
+          />
         )
       })}
         </Box>

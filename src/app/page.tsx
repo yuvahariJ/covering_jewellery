@@ -1,4 +1,6 @@
 // Json Data import
+"use client"
+
 import HomePageData from "../../JsonData/HomePage.json";
 import PageWrapper from "./Components/PageWrapper";
 import RenderComponents from "./Components/RenderComponents";
