@@ -99,7 +99,7 @@ const ProductList = () => {
 
         {/* isdesktop */}
         <Box
-          className="is-desktop"
+          // className="is-desktop"
           sx={{
             // background: "green",
 
@@ -108,9 +108,19 @@ const ProductList = () => {
             display: "grid",
             gridTemplateColumns: "20% 20% 20% 20% 20%",
 
-            // isMobileSmall?"50% 50%":isMobileMedium?"33.33% 33.33% 33.33%":isTabletMedium?"25% 25% 25% 26%":"20% 20% 20% 20% 20%",
+            // isMobileSmall?"50% 50%":isMobileMedium?"":isTabletMedium?"25% 25% 25% 26%":"20% 20% 20% 20% 20%",
             gridColumnGap: toRem(8),
             gridRowGap: toRem(8),
+            "@media (max-width:1110px)": {
+              gridTemplateColumns: "25% 25% 25% 25%",
+            },
+            "@media (max-width:650px)": {
+              gridTemplateColumns: "33.33% 33.33% 33.33%",
+            },
+            "@media (max-width:450px)": {
+              gridTemplateColumns: "50% 50%",
+            },
+
             // margin:toRem(4),
           }}
         >
@@ -130,7 +140,7 @@ const ProductList = () => {
         </Box>
 
         {/* isTabletMedium */}
-        <Box
+        {/* <Box
           className="is-tablet-medium"
           sx={{
             // background: "green",
@@ -159,10 +169,10 @@ const ProductList = () => {
               />
             );
           })}
-        </Box>
+        </Box> */}
 
         {/* isMobileMedium */}
-        <Box
+        {/* <Box
           className="is-mobile-medium"
           sx={{
             // background: "green",
@@ -191,9 +201,9 @@ const ProductList = () => {
               />
             );
           })}
-        </Box>
+        </Box> */}
         {/* isMobileSmall */}
-        <Box
+        {/* <Box
           className="is-mobile-small"
           sx={{
             height: "100%",
@@ -217,7 +227,7 @@ const ProductList = () => {
               />
             );
           })}
-        </Box>
+        </Box> */}
       </Box>
     </>
   );
