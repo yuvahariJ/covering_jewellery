@@ -120,7 +120,7 @@ const ProductList = () => {
       {earingProductData?.map((earing,index) => {
         return (
           <PRoductInfo
-            imageSrc={earing?.bannerImage?.src}
+            imageSrc={"https://yuvaharij.github.io/covering_jewellery/Earing_2.jpg"}
             key={index}
             price={earing?.price}
             actualPrice={earing?.originalPrice}
