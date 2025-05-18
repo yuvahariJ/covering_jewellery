@@ -5,8 +5,8 @@ import '@fontsource/roboto'
 // import SearchBar from "./Components/SearchBar";
 
 export const metadata: Metadata = {
-  title: "Demo App",
-  description: "Building my own Empier",
+  title: " JR Covering Jwellery",
+  description: "Buy at your own ease",
 };
 
 export default function RootLayout({

@@ -128,7 +128,7 @@ const ProductList = () => {
             return (
               <PRoductInfo
                 imageSrc={
-                  "https://yuvaharij.github.io/covering_jewellery/Earing_2.jpg"
+                  earing?.bannerImage
                 }
                 key={index}
                 price={earing?.price}
