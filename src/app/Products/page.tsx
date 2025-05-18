@@ -1,13 +1,22 @@
 "use client"
 
 import { Box,Typography,useMediaQuery } from '@mui/material'
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import PRoductInfo from '../Components/ProductInfo';
 import { toRem } from '../Components/Utils';
 
 
+import image1 from "../../../public/EaringsPic/Earing_1.jpg";
+import image2 from "../../../public/EaringsPic/Earing_2.jpg";
+import image3 from "../../../public/EaringsPic/Earing_3.jpg";
+import image4 from "../../../public/EaringsPic/Earing_4.jpg";
+import image5 from "../../../public/EaringsPic/Earing_5.jpg";
+import image6 from "../../../public/EaringsPic/Earing_6.jpg";
+import image7 from "../../../public/EaringsPic/Earing_7.jpg";
+import image8 from "../../../public/EaringsPic/Earing_8.jpg";
+
 interface ProductDetailsProps{
-  instock: number;
+  instock?: number;
   originalPrice: string;
   price: string;
   bannerImage: {
@@ -17,18 +26,66 @@ interface ProductDetailsProps{
 const ProductList = () => {
   
     
-    const isMobileSmall = useMediaQuery('(max-width:450px)');
+  const isMobileSmall = useMediaQuery('(max-width:450px)');
   const isMobileMedium = useMediaQuery('(max-width:650px)');
   const isTabletMedium = useMediaQuery('(max-width:1100px)');
-  const [earingProductData, setEaringProductData] = useState<ProductDetailsProps[]>([]);
-      useEffect(() => {
-        // if (productUid) {
-          fetch("/api/Earing")
-            .then((res) => res.json())
-            .then((data) => setEaringProductData(data.data.data))
-            .catch((err) => console.error("Fetch error:", err));
-        // }
-      }, []);
+  const data:ProductDetailsProps[] = [
+      {
+        bannerImage: image2,
+        price: "80",
+        originalPrice: "100",
+        instock: 2,
+      },
+      {
+        bannerImage: image1,
+        price: "80",
+        originalPrice: "100",
+      },
+      {
+        bannerImage: image3,
+        price: "80",
+        originalPrice: "100",
+        instock: 2,
+      },
+      {
+        bannerImage: image4,
+        price: "80",
+        originalPrice: "100",
+        instock: 2,
+      },
+      {
+        bannerImage: image5,
+        price: "80",
+        originalPrice: "120",
+        instock: 2,
+      },
+      {
+        bannerImage: image6,
+        price: "80",
+        originalPrice: "120",
+      },
+      {
+        bannerImage: image7,
+        price: "80",
+        originalPrice: "120",
+      },
+      {
+        bannerImage: image8,
+        price: "80",
+        originalPrice: "120",
+      },
+    ]
+  
+  const earingProductData = data;
+  // const [earingProductData, setEaringProductData] = useState<ProductDetailsProps[]>([]);
+      // useEffect(() => {
+      //   // if (productUid) {
+      //     fetch("/api/Earing")
+      //       .then((res) => res.json())
+      //       .then((data) => setEaringProductData(data.data.data))
+      //       .catch((err) => console.error("Fetch error:", err));
+      //   // }
+      // }, []);
     console.log(earingProductData,"eraning minni");
   return (
     <>
@@ -67,7 +124,7 @@ const ProductList = () => {
             key={index}
             price={earing?.price}
             actualPrice={earing?.originalPrice}
-            instock={earing?.instock}
+            instock={earing?.instock??1}
           />
         )
       })}
