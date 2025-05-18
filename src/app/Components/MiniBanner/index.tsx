@@ -13,10 +13,15 @@ export interface MiniFullLengthBannerProps {
   }[];
 }
 
+interface minDataProps{
+  bannerImage: {src:string},
+  price: string;
+  originalPrice: string;
+}
 const MiniFullLengthBanner = (props: MiniFullLengthBannerProps) => {
   console.log("props in MiniFullLengthBanner", props);
 
-  const [productData, setProductData] = useState([]);
+  const [productData, setProductData] = useState<minDataProps[]>([]);
     useEffect(() => {
       // if (productUid) {
         fetch("/api/Earing")
