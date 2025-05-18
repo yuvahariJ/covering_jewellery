@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 // next.config.js
-const isGithubPages = process.env.GITHUB_ACTIONS || false;
+// const isGithubPages = process.env.GITHUB_ACTIONS || false;
 
 const repoName = 'covering_jewellery'; // replace this
 
@@ -16,8 +16,8 @@ const nextConfig: NextConfig = {
     },]
   },
   output: 'export', // important for static export
-  basePath: isGithubPages ? `/${repoName}` : '',
-  assetPrefix: isGithubPages ? `/${repoName}/` : '',
+  basePath: `/${repoName}` ,
+  assetPrefix: `/${repoName}/`,
 };
 
 export default nextConfig;
