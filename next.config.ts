@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 // next.config.js
 // const isGithubPages = process.env.GITHUB_ACTIONS || false;
 
-const repoName = 'covering_jewellery'; // replace this
 
 
 const nextConfig: NextConfig = {
@@ -15,9 +14,9 @@ const nextConfig: NextConfig = {
       pathname: '/**',
     },]
   },
-  output: 'export', // important for static export
-  basePath: `/${repoName}` ,
-  assetPrefix: `/${repoName}/`,
+  output: 'export',
+  basePath: '/covering_jewellery',  // repo name
+  assetPrefix: '/covering_jewellery/',
 };
 
 export default nextConfig;
