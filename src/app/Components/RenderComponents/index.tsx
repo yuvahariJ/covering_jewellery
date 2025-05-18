@@ -12,7 +12,6 @@ interface RenderComponentsProps{
   }[];
 }
 const RenderComponents = (props: RenderComponentsProps) => {
-  console.log(props,"ok");
   const { renderComponent } = props;
   return (
     <Box>
@@ -28,7 +27,6 @@ const RenderComponents = (props: RenderComponentsProps) => {
           )
         }
         // if (component?.SliderWithOneCard) {
-        //   console.log("oko wr");
           
         //   return <SliderWithOneCard key={index} {...component?.SliderWithOneCard} />
         // }

@@ -11,7 +11,6 @@ interface ProductTileProps{
 }
 const ProductTile = (props: ProductTileProps) => {
   const { image, title, height } = props;
-  console.log("hey productTille",image);
   
   return (
       <Box
