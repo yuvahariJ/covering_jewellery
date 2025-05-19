@@ -138,21 +138,43 @@ const ProductList = () => {
             );
           })}
         </Box>
+        <Box>
+          <Typography
+            component="h2"
+            sx={{
+              fontSize: toRem(20),
+              fontWeight: 600,
+              p: toRem(8),
+            }}
+          >
+            Earings
+          </Typography>
+        </Box>
 
-        {/* isTabletMedium */}
-        {/* <Box
-          className="is-tablet-medium"
+        {/* isdesktop */}
+        <Box
+          // className="is-desktop"
           sx={{
             // background: "green",
 
             height: "100%",
             width: "100%",
             display: "grid",
-            gridTemplateColumns: "25% 25% 25% 25%",
+            gridTemplateColumns: "20% 20% 20% 20% 20%",
 
-            // isMobileSmall?"50% 50%":isMobileMedium?"33.33% 33.33% 33.33%":isTabletMedium?"25% 25% 25% 26%":"20% 20% 20% 20% 20%",
+            // isMobileSmall?"50% 50%":isMobileMedium?"":isTabletMedium?"25% 25% 25% 26%":"20% 20% 20% 20% 20%",
             gridColumnGap: toRem(8),
             gridRowGap: toRem(8),
+            "@media (max-width:1110px)": {
+              gridTemplateColumns: "25% 25% 25% 25%",
+            },
+            "@media (max-width:650px)": {
+              gridTemplateColumns: "33.33% 33.33% 33.33%",
+            },
+            "@media (max-width:450px)": {
+              gridTemplateColumns: "50% 50%",
+            },
+
             // margin:toRem(4),
           }}
         >
@@ -160,7 +182,7 @@ const ProductList = () => {
             return (
               <PRoductInfo
                 imageSrc={
-                  "https://yuvaharij.github.io/covering_jewellery/Earing_2.jpg"
+                  earing?.bannerImage
                 }
                 key={index}
                 price={earing?.price}
@@ -169,65 +191,7 @@ const ProductList = () => {
               />
             );
           })}
-        </Box> */}
-
-        {/* isMobileMedium */}
-        {/* <Box
-          className="is-mobile-medium"
-          sx={{
-            // background: "green",
-
-            height: "100%",
-            width: "100%",
-            display: "grid",
-            gridTemplateColumns: "33.33% 33.33% 33.33%",
-
-            // isMobileSmall?"50% 50%":isMobileMedium?"33.33% 33.33% 33.33%":isTabletMedium?"25% 25% 25% 26%":"20% 20% 20% 20% 20%",
-            gridColumnGap: toRem(8),
-            gridRowGap: toRem(8),
-            // margin:toRem(4),
-          }}
-        >
-          {earingProductData?.map((earing, index) => {
-            return (
-              <PRoductInfo
-                imageSrc={
-                  "https://yuvaharij.github.io/covering_jewellery/Earing_2.jpg"
-                }
-                key={index}
-                price={earing?.price}
-                actualPrice={earing?.originalPrice}
-                instock={earing?.instock ?? 1}
-              />
-            );
-          })}
-        </Box> */}
-        {/* isMobileSmall */}
-        {/* <Box
-          className="is-mobile-small"
-          sx={{
-            height: "100%",
-            width: "100%",
-            display: "grid",
-            gridTemplateColumns: "50% 50%",
-            gridColumnGap: toRem(8),
-            gridRowGap: toRem(8),
-          }}
-        >
-          {earingProductData?.map((earing, index) => {
-            return (
-              <PRoductInfo
-                imageSrc={
-                  "https://yuvaharij.github.io/covering_jewellery/Earing_2.jpg"
-                }
-                key={index}
-                price={earing?.price}
-                actualPrice={earing?.originalPrice}
-                instock={earing?.instock ?? 1}
-              />
-            );
-          })}
-        </Box> */}
+        </Box>
       </Box>
     </>
   );
